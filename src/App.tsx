@@ -76,7 +76,7 @@ export default function Game() {
     setCurrentMove(nextMove);
   }
 
-  const moves = history.map((squares, move) => {
+  const moves = history.map((_, move) => {
     const description = move > 0 ? `Go to move #${move}` : "Go to game start";
     return (
       <li key={move}>
